@@ -36,4 +36,18 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Terms & Conditions Page -->
+  <url>
+    <loc>https://entice-brown.vercel.app/terms</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Privacy Policy Page -->
+  <url>
+    <loc>https://entice-brown.vercel.app/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>
