@@ -1070,7 +1070,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenConsultati
                   <img src={t.avatar} alt={t.author} className="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm" />
                   <div>
                     <h4 className="font-black text-lg text-[#1D1D1F]">{t.author}</h4>
-                    <p className="text-[13px] font-bold text-[#86868B] tracking-wide">{t.title}, {t.company}</p>
+                    <p className="text-[13px] font-bold text-[#86868B] tracking-wide">{t.title}</p>
                   </div>
                 </div>
               </div>
