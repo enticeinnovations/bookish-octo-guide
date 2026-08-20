@@ -7,6 +7,7 @@ import { ServicesPage } from './pages/ServicesPage';
 import { BlogsPage } from './pages/BlogsPage';
 import { ContactPage } from './pages/ContactPage';
 import { TermsAndConditions } from './components/TermsAndConditions';
+import { PrivacyPolicy } from './components/PrivacyPolicy';
 import { LeadModal } from './components/LeadModal';
 import { WhatsAppWidget } from './components/WhatsAppWidget';
 import { PageType } from './types';
@@ -34,6 +35,8 @@ function App() {
         return <ContactPage onNavigate={handleNavigate} />;
       case 'terms':
         return <TermsAndConditions />;
+      case 'privacy':
+        return <PrivacyPolicy />;
       default:
         return <HomePage onNavigate={handleNavigate} onOpenConsultation={() => setIsConsultationOpen(true)} />;
     }
