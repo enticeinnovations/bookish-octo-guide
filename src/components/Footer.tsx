@@ -152,7 +152,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
         </div>
 
-        {/* Bottom Bar */}
+       {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/20 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/90 font-medium drop-shadow-md">
             © {new Date().getFullYear()} ENTICE HR SOLUTIONS. ALL RIGHTS RESERVED.
@@ -160,7 +160,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-white/80 font-medium tracking-wider drop-shadow-sm">
             <button onClick={() => onNavigate('privacy' as any)} className="hover:text-white transition-colors uppercase text-left">Privacy Policy</button>
             <button onClick={() => onNavigate('terms')} className="hover:text-white transition-colors uppercase text-left">Terms and Conditions</button>
-            <button onClick={() => onNavigate('compliance' as any)} className="hover:text-white transition-colors uppercase text-left">Compliance</button>
           </div>
         </div>
       </div>
