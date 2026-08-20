@@ -158,9 +158,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             © {new Date().getFullYear()} ENTICE HR SOLUTIONS. ALL RIGHTS RESERVED.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-white/80 font-medium tracking-wider drop-shadow-sm">
-            <a href="#" className="hover:text-white transition-colors uppercase">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors uppercase">Terms and Conditions</a>
-            <a href="#" className="hover:text-white transition-colors uppercase">Compliance</a>
+            <a href="/privacy-policy" className="hover:text-white transition-colors uppercase">Privacy Policy</a>
+            <a href="/terms-and-conditions" className="hover:text-white transition-colors uppercase">Terms and Conditions</a>
+            <a href="/compliance" className="hover:text-white transition-colors uppercase">Compliance</a>
           </div>
         </div>
       </div>
