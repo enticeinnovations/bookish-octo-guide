@@ -158,9 +158,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             © {new Date().getFullYear()} ENTICE HR SOLUTIONS. ALL RIGHTS RESERVED.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-white/80 font-medium tracking-wider drop-shadow-sm">
-            <a href="/privacy-policy" className="hover:text-white transition-colors uppercase">Privacy Policy</a>
-            <a href="/terms-and-conditions" className="hover:text-white transition-colors uppercase">Terms and Conditions</a>
-            <a href="/compliance" className="hover:text-white transition-colors uppercase">Compliance</a>
+            <button onClick={() => onNavigate('privacy' as any)} className="hover:text-white transition-colors uppercase text-left">Privacy Policy</button>
+            <button onClick={() => onNavigate('terms')} className="hover:text-white transition-colors uppercase text-left">Terms and Conditions</button>
+            <button onClick={() => onNavigate('compliance' as any)} className="hover:text-white transition-colors uppercase text-left">Compliance</button>
           </div>
         </div>
       </div>
