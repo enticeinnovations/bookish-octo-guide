@@ -56,7 +56,8 @@ export const Navbar: React.FC<NavbarProps> = ({
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const isOverHero = (currentPage === 'home' || currentPage === 'about' || currentPage === 'services' || currentPage === 'blogs' || currentPage === 'contact') && !isScrolled;
+  // Added 'blogs', 'terms', and 'privacy' to the hero detection to share the same glassy finish
+  const isOverHero = (currentPage === 'home' || currentPage === 'about' || currentPage === 'services' || currentPage === 'blogs' || currentPage === 'contact' || currentPage === 'terms' || currentPage === 'privacy') && !isScrolled;
 
   // Multicolored Iridescent Glass Effect for the Border
   const borderGlow = useMotionTemplate`radial-gradient(250px circle at ${mouseX}px ${mouseY}px, ${
