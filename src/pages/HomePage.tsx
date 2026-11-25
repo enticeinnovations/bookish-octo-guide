@@ -640,45 +640,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenConsultati
         }}
       />
 
-      {/* FIXED DYNAMIC LINES & CURSOR GLOW */}
+      {/* FIXED CURSOR GLOW (background lines removed) */}
       <motion.div 
         className="fixed inset-0 pointer-events-none z-[-1]"
         style={{ opacity: svgOpacity }}
       >
-        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1400 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          {[200, 500, 900, 1200].map((x) => (
-            <line key={x} x1={x} y1="0" x2={x} y2="800" stroke="#FFD84D" strokeOpacity="0.2" strokeWidth="1.5" strokeDasharray="2 6" />
-          ))}
-          
-          <motion.path 
-            animate={{ d: `M -100 100 Q ${600 + mousePos.normX * 500} ${300 + mousePos.normY * 400} 1500 700` }}
-            transition={{ type: 'spring', stiffness: 40, damping: 20 }}
-            stroke="#0F67FF" strokeOpacity="0.4" strokeWidth="3" fill="none" 
-          />
-          <motion.path 
-            animate={{ d: `M 200 -100 Q ${800 + mousePos.normX * 800} ${500 + mousePos.normY * 300} 1500 400` }}
-            transition={{ type: 'spring', stiffness: 60, damping: 25 }}
-            stroke="#0F67FF" strokeOpacity="0.28" strokeWidth="2" fill="none" strokeDasharray="4 4"
-          />
-          
-          <motion.path 
-            animate={{ d: `M -100 750 Q ${700 - mousePos.normX * 600} ${400 - mousePos.normY * 350} 1500 -100` }}
-            transition={{ type: 'spring', stiffness: 50, damping: 25 }}
-            stroke="#FFD84D" strokeOpacity="0.55" strokeWidth="3" fill="none" 
-          />
-          <motion.path 
-            animate={{ d: `M -100 500 Q ${500 - mousePos.normX * 400} ${200 - mousePos.normY * 500} 1000 -100` }}
-            transition={{ type: 'spring', stiffness: 30, damping: 15 }}
-            stroke="#FFD84D" strokeOpacity="0.25" strokeWidth="6" fill="none" 
-          />
-
-          <motion.path 
-            animate={{ d: `M -100 350 Q ${700 + mousePos.normX * 450} ${650 + mousePos.normY * 450} 1500 900` }}
-            transition={{ type: 'spring', stiffness: 35, damping: 15 }}
-            stroke="#FF6B6B" strokeOpacity="0.45" strokeWidth="3" fill="none" 
-          />
-        </svg>
-
         <motion.div
           className="absolute w-[400px] h-[400px] rounded-full pointer-events-none"
           style={{
