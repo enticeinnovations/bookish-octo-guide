@@ -743,8 +743,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenConsultati
                 <div className="text-[9px] sm:text-[14px] uppercase tracking-[0.2em] text-[#FFD84D]/90 font-medium mt-0.5 sm:mt-2">Candidate Database</div>
               </motion.div>
               <motion.div style={{ x: rightShift }} className="text-left flex-1 border-l-2 border-white pl-3 sm:pl-6 w-full">
-                <div className="text-lg sm:text-4xl font-bold text-white drop-shadow-md">15,000+</div>
-                <div className="text-[9px] sm:text-[14px] uppercase tracking-[0.2em] text-[#FFD84D]/90 font-medium mt-0.5 sm:mt-2">Successful Placements </div>
+                <div className="text-lg sm:text-4xl font-bold text-white drop-shadow-md">90 Days</div>
+                <div className="text-[9px] sm:text-[14px] uppercase tracking-[0.2em] text-[#FFD84D]/90 font-medium mt-0.5 sm:mt-2">Free replacement</div>
               </motion.div>
             </div>
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between w-full gap-3 sm:gap-24 px-4 sm:px-8">
