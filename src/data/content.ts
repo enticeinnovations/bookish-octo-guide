@@ -307,7 +307,7 @@ export const TESTIMONIALS = [
     quote: "The website reflects our interior design work well, and the candidates they sent for our open roles were a good fit. A reliable partner.",
     author: "Vollemi",
     title: "Client",
-    avatar: "/logo/clients/vollemi.png"
+    avatar: ""
   },
   {
     id: 3,
