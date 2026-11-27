@@ -295,29 +295,26 @@ Why AI Sourcing Leads:
 export const TESTIMONIALS = [
   {
     id: 1,
-    metrics: "12 Engineers Hired in 21 Days",
-    quote: "Entice HR Solutions transformed our scaling journey. We needed 12 specialized full-stack engineers in 30 days without an internal recruitment team. They delivered pre-vetted candidates within 5 days and handled all offer negotiations seamlessly.",
-    author: "Vikramaditya Sharma",
-    title: "Co-Founder & CTO",
-    company: "Nexus Cloud Technologies",
-    avatar: "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=200&h=200&q=80"
+    metrics: "Payroll & Compliance",
+    quote: "Entice HR manages our payroll and statutory filings end to end. Salaries go out on time, PF and ESI are handled correctly, and we no longer have to chase compliance ourselves.",
+    author: "Vel Sakthi Enterprises Pvt Ltd",
+    title: "Client",
+    avatar: ""
   },
   {
     id: 2,
-    metrics: "100% Payroll Compliance & Zero Fines",
-    quote: "Offloading our payroll, PF, and compliance to Entice HR eliminated monthly admin headaches completely. Their response time on WhatsApp and email is phenomenal. Truly our trusted HR partner.",
-    author: "Ananya Deshmukh",
-    title: "Head of Operations",
-    company: "FinPulse Solutions",
-    avatar: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=200&h=200&q=80"
+    metrics: "Website & Recruitment",
+    quote: "The website reflects our interior design work well, and the candidates they sent for our open roles were a good fit. A reliable partner.",
+    author: "Vollemi",
+    title: "Client",
+    avatar: "/logo/clients/vollemi.png"
   },
   {
     id: 3,
-    metrics: "VP Hired in 18 Days",
-    quote: "Finding a VP of Engineering on contingent recruiting felt impossible until we engaged Entice HR's Executive Search team. Their deep market reach surfaced leadership candidates we could never have reached otherwise.",
-    author: "Rajesh K. Nambiar",
-    title: "Managing Director",
-    company: "Aura Logistics India",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&h=200&q=80"
+    metrics: "Recruitment",
+    quote: "We needed the right people quickly, and they delivered. Clear communication and good-quality profiles.",
+    author: "FIAFI SUR NATIONAL TRADE LLC",
+    title: "Client",
+    avatar: ""
   }
 ];
