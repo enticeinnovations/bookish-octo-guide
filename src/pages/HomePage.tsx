@@ -1024,23 +1024,43 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenConsultati
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {TESTIMONIALS.map((t) => (
-              <div key={t.id} className="p-8 rounded-[2rem] card-item bg-white/60 backdrop-blur-md border border-white/80 shadow-xl flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300">
-                <div>
-                  <div className="inline-block px-4 py-1.5 rounded-full bg-emerald-500/10 text-emerald-700 text-xs font-bold tracking-wide mb-6">
-                    {t.metrics}
-                  </div>
-                  <p className="text-sm md:text-[15px] text-[#505055] font-medium leading-relaxed mb-8">"{t.quote}"</p>
-                </div>
-                <div className="flex items-center gap-4 pt-5 border-t border-black/10">
-                  <img src={t.avatar} alt={t.author} className="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm" />
+            {TESTIMONIALS.map((t) => {
+              const initials = t.author
+                .split(' ')
+                .filter(Boolean)
+                .slice(0, 2)
+                .map((w: string) => w[0].toUpperCase())
+                .join('');
+
+              return (
+                <div key={t.id} className="p-8 rounded-[2rem] card-item bg-white/60 backdrop-blur-md border border-white/80 shadow-xl flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300">
                   <div>
-                    <h4 className="font-black text-lg text-[#1D1D1F]">{t.author}</h4>
-                    <p className="text-[13px] font-bold text-[#86868B] tracking-wide">{t.title}</p>
+                    <div className="inline-block px-4 py-1.5 rounded-full bg-[#0066FF]/10 text-[#0066FF] text-xs font-bold tracking-wide mb-6">
+                      {t.metrics}
+                    </div>
+                    <p className="text-sm md:text-[15px] text-[#505055] font-medium leading-relaxed mb-8">"{t.quote}"</p>
+                  </div>
+                  <div className="flex items-center gap-4 pt-5 border-t border-black/10">
+                    {t.avatar ? (
+                      <div className="w-12 h-12 rounded-full shrink-0 bg-white border-2 border-white shadow-sm flex items-center justify-center overflow-hidden p-1.5">
+                        <img src={t.avatar} alt={`${t.author} logo`} className="w-full h-full object-contain" />
+                      </div>
+                    ) : (
+                      <div
+                        className="w-12 h-12 rounded-full shrink-0 flex items-center justify-center text-white text-sm font-black border-2 border-white shadow-sm"
+                        style={{ background: 'linear-gradient(135deg, #063091 0%, #0F67FF 55%, #2E86FF 100%)' }}
+                      >
+                        {initials}
+                      </div>
+                    )}
+                    <div>
+                      <h4 className="font-black text-lg text-[#1D1D1F]">{t.author}</h4>
+                      <p className="text-[13px] font-bold text-[#86868B] tracking-wide">{t.title}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </section>
 
