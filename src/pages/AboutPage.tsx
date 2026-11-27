@@ -441,21 +441,21 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenConsultation, onNavi
 
   const journeySteps = [
     {
-      step: '2023',
+      step: '2025',
       title: 'Founded',
       desc: 'Entice Innovations was born with a clear mission — be the premium digital partner that ambitious businesses trust. Started with a small team and a big vision.',
       icon: <Rocket className="w-5 h-5 text-[#0066FF]" />
     },
     {
-      step: '2024',
+      step: '2025',
       title: 'First 50 Clients ',
       desc: 'Secured our first enterprise partnerships across fintech, retail, and professional services. Delivered measurable growth for every single one.',
       icon: <Handshake className="w-5 h-5 text-[#0066FF]" />
     },
     {
-      step: '2025',
-      title: '15,000+ Placement Records',
-      desc: 'Backed by a track record of 15,000+ successful career placements across top-tier industries and emerging enterprises',
+      step: '2026',
+      title: '100%',
+      desc: 'Backed by 100% payroll precision and zero statutory filing penalties across growing startups and enterprises.',
       icon: <Cpu className="w-5 h-5 text-[#0066FF]" />
     },
     {
